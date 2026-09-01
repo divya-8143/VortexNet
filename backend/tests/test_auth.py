@@ -20,7 +20,7 @@ async def test_user_authentication_failure(async_db):
 async def test_create_new_user(async_db):
     user_in = UserCreate(
         username="neteng1",
-        email="neteng1@vortexnet.local",
+        email="neteng1@vortexnet.com",
         full_name="Network Engineer 1",
         password="securepassword123",
         role=UserRole.NETWORK_ENGINEER

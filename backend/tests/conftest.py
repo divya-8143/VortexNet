@@ -2,6 +2,7 @@ import pytest
 import pytest_asyncio
 from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession, async_sessionmaker
 from backend.database import Base
+import backend.models # Ensure all models are registered
 from backend.models.user import User, UserRole
 from backend.security import get_password_hash
 
